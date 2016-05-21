@@ -1,0 +1,14 @@
+RewriteEngine On  #打开重写引擎
+
+#图片防盗链
+#RewriteCond %{HTTP_REFERER} !
+#RewriteCond %{HTTP_REFERER} !/www.ceshi.com$ [NC]
+#RewriteRule  \.(gif|jpg|png)$ Public/uploads/1.jpg
+
+
+#主页的规则
+RewriteRule ^([a-z]+)_([a-z]+)\.html$  index.php?r=$1/$2 [L]
+
+
+
+
